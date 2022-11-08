@@ -8,4 +8,10 @@ let animals = [
     "basalisk",
   ];
   
-let bListAnimals = // Your 'filter' code here.
+let bListAnimals = animals.filter((animal) => {
+  // Your 'filter' code here.
+  //.filter() method to generate a new array 
+  //which contains only the animals whose name begins with 'b'.
+  return animal.startsWith("b");
+});
+console.log(bListAnimals);
